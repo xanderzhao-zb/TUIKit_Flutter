@@ -1,0 +1,104 @@
+PODS:
+  - atomic_x_core (5.2.0):
+    - AtomicXCore (~> 5.2.0)
+    - Flutter
+  - AtomicXCore (5.2.0):
+    - TXIMSDK_Plus_iOS_XCFramework
+    - TXLiteAVSDK_Professional (>= 13.5.21355)
+  - Flutter (1.0.0)
+  - flutter_effect_player (0.0.1):
+    - Flutter
+    - flutter_effect_player/NoXMagic (= 0.0.1)
+  - flutter_effect_player/NoXMagic (0.0.1):
+    - Flutter
+    - TCEffectPlayer
+    - TCMediaX
+  - HydraAsync (2.0.6)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.4.8):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - TCEffectPlayer (3.3.256):
+    - TCMediaX
+  - TCMediaX (3.3.256)
+  - tencent_cloud_chat_sdk (8.0.0):
+    - Flutter
+    - HydraAsync
+    - TXIMSDK_Plus_iOS_XCFramework (~> 9.0.7652)
+  - tui_live_kit (0.0.1):
+    - Flutter
+    - YTCommonXMagic (= 1.3.1)
+  - TXIMSDK_Plus_iOS_XCFramework (9.0.7661)
+  - TXLiteAVSDK_Professional (13.5.21355):
+    - TXLiteAVSDK_Professional/Professional (= 13.5.21355)
+  - TXLiteAVSDK_Professional/Professional (13.5.21355)
+  - YTCommonXMagic (1.3.1)
+
+DEPENDENCIES:
+  - atomic_x_core (from `.symlinks/plugins/atomic_x_core/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_effect_player (from `.symlinks/plugins/flutter_effect_player/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - TCEffectPlayer (from `https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/3.3/3.3.256/TCEffectPlayer.podspec`)
+  - TCMediaX (from `https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/3.3/3.3.256/TCMediaX.podspec`)
+  - tencent_cloud_chat_sdk (from `.symlinks/plugins/tencent_cloud_chat_sdk/ios`)
+  - tui_live_kit (from `.symlinks/plugins/tui_live_kit/ios`)
+  - YTCommonXMagic (from `https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/YTCommonXMagic_1.3.1/YTCommonXMagic.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - AtomicXCore
+    - HydraAsync
+    - TXIMSDK_Plus_iOS_XCFramework
+    - TXLiteAVSDK_Professional
+
+EXTERNAL SOURCES:
+  atomic_x_core:
+    :path: ".symlinks/plugins/atomic_x_core/ios"
+  Flutter:
+    :path: Flutter
+  flutter_effect_player:
+    :path: ".symlinks/plugins/flutter_effect_player/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  TCEffectPlayer:
+    :podspec: https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/3.3/3.3.256/TCEffectPlayer.podspec
+  TCMediaX:
+    :podspec: https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/3.3/3.3.256/TCMediaX.podspec
+  tencent_cloud_chat_sdk:
+    :path: ".symlinks/plugins/tencent_cloud_chat_sdk/ios"
+  tui_live_kit:
+    :path: ".symlinks/plugins/tui_live_kit/ios"
+  YTCommonXMagic:
+    :podspec: https://mediacloud-76607.gzc.vod.tencent-cloud.com/MediaX/iOS/podspec/release/YTCommonXMagic_1.3.1/YTCommonXMagic.podspec
+
+SPEC CHECKSUMS:
+  atomic_x_core: 9f6446cc42c095bffcab463146cf0308cac5f1db
+  AtomicXCore: a1e990dd894b7ead7df23e13b4e3cd6a8aeb043e
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_effect_player: 9c1f8cfc9beb0fb211a7cf5661de9d8b0189ebe3
+  HydraAsync: 8d589bd725b0224f899afafc9a396327405f8063
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  permission_handler_apple: 92d754bbaa7361d436db2d6c3c1c2a0fdcec462e
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+  TCEffectPlayer: 11706e549e47382114ff038506b9d56f5254fbd9
+  TCMediaX: c47980265070cee414668267918ca8e1894813c8
+  tencent_cloud_chat_sdk: f03289e1fab169c20aaf7ed513942e197fb23f91
+  tui_live_kit: 5cbc9b49b70529d27a964c4e2f94d9323c1df1a0
+  TXIMSDK_Plus_iOS_XCFramework: 833d9b6cd4fec18531b17d35d89c7f0f55060272
+  TXLiteAVSDK_Professional: 914aa2e59545c8cdff80ab70c1bc8191c683ecfc
+  YTCommonXMagic: eeb1ffa7c3d33ae27a151488885ad52bb85c0b77
+
+PODFILE CHECKSUM: 5c26b85b8d786d2d2e7a04b361e529e7cf887e41
+
+COCOAPODS: 1.17.0

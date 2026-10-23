@@ -1,0 +1,40 @@
+// `plugins {}` 必须是脚本的第一个语句，group 与 version 放在其后。
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+}
+
+group = "com.tencent.livekit.tui_live_kit"
+version = "1.0"
+
+android {
+    namespace = "com.tencent.livekit.tui_live_kit"
+
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        // 与 atomic_x_core 保持一致；系统热状态需要 API 29，低版本在插件内退化处理。
+        minSdk = 21
+        consumerProguardFiles "consumer-rules.pro"
+    }
+}
+
+dependencies {
+    // live_kit_access uses flutter_effect_player/NoXMagic to avoid an iOS-only
+    // YTCommonXMagic conflict. The same global sub_spec also excludes Android's
+    // TCXMagicAuth transitively, but TCMediaX still loads libYTCommonXMagic.so
+    // while its Flutter plugin is attached. Restore the matching Android AAR
+    // here so plugin registration can continue to tencent_rtc_sdk.
+    implementation "com.tencent.mediacloud:TCXMagicAuth:3.4.0.245"
+    // 前台服务通知与权限校验。
+    implementation "androidx.core:core-ktx:1.12.0"
+}
